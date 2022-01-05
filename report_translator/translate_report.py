@@ -23,7 +23,7 @@ def translate_report(report, src, dest):
         item_names.append(item['name'])
 
     translator = Translator()
-    translated_names = translator.translate(item_names, src='fi', dest='en')
+    translated_names = translator.translate(item_names, src=src, dest=dest)
     for translation in translated_names:
         for item in items:
             if item['name'] == translation.origin:
