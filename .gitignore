@@ -1,1 +1,5 @@
-/reports
+/out/reports
+/out/receipts
+report_manager/client_secrets.json
+report_manager/token.json
+report_manager/gdrive_conf.json
