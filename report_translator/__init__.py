@@ -1,0 +1,1 @@
+import report_translator.translate_report

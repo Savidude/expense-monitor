@@ -67,6 +67,9 @@ class ReceiptAnalysis:
 
         items = []
         for item in item_data:
+            if item.name == "":
+                item.name = "Unknown"
+
             quantity_data = item.quantity
             quantity = {}
             if quantity_data is not None:
@@ -98,3 +101,4 @@ def generate_report(item_data, output_dir):
     analysis_file = open(analysis_file_path, "w")
     analysis_file.write(analysis.to_json())
     analysis_file.close()
+    return analysis_file_path

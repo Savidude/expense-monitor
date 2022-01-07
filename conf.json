@@ -1,0 +1,10 @@
+{
+  "receipt-download-dir": "./out/receipts",
+  "report-output-dir": "./out/reports",
+  "translated-report-output-dir": "./out/reports/translate",
+  "translation": {
+    "src": "fi",
+    "dest": "en"
+  },
+  "is-comma-decimal": true
+}
